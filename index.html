@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shawn Kreitz Audio Availability</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css">
+</head>
+<body>
+<header>
+  <h1>Shawn Kreitz Audio Availability</h1>
+</header>
+
+<main>
+  <div id="calendar"></div>
+
+  <h2>Booking Request Form</h2>
+  <form id="bookingForm">
+    <label>Name: <input type="text" name="name" required></label>
+    <label>Email: <input type="email" name="email" required></label>
+    <label>Start Date: <input type="date" name="start" required></label>
+    <label>End Date: <input type="date" name="end" required></label>
+    <label>Status:
+      <select name="status" required>
+        <option value="tentative">Tentative</option>
+        <option value="confirmed">Confirmed</option>
+      </select>
+    </label>
+    <button type="submit">Submit Request</button>
+  </form>
+</main>
+
+<footer>
+  Contact: <a href="mailto:shawnkliveaudio@gmail.com">shawnkliveaudio@gmail.com</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
